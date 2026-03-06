@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
@@ -12,31 +11,39 @@
 
 <style>
 
-body{
+*{
 margin:0;
-font-family:'Poppins', sans-serif;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
 height:100vh;
 display:flex;
-align-items:center;
 justify-content:center;
-background:linear-gradient(135deg,#d4af37,#f8f2dc);
-color:#222;
+align-items:center;
+
+background:linear-gradient(135deg,#e6c77d,#f7f3e9);
+
 }
 
 .container{
 
 background:white;
-padding:50px;
+padding:50px 40px;
+width:450px;
 border-radius:12px;
-width:420px;
 text-align:center;
+
 box-shadow:0 20px 40px rgba(0,0,0,0.15);
 
 }
 
 .logo{
 
-font-size:38px;
+font-size:42px;
 font-weight:600;
 letter-spacing:2px;
 
@@ -52,26 +59,26 @@ color:#777;
 
 h2{
 
-margin-top:30px;
+margin-top:25px;
 font-size:28px;
 
 }
 
 .desc{
 
-margin-top:10px;
+margin-top:15px;
 font-size:15px;
-line-height:1.6;
 color:#555;
+line-height:1.6;
 
 }
 
 .countdown{
 
+margin-top:30px;
 display:flex;
 justify-content:center;
 gap:20px;
-margin-top:25px;
 
 }
 
@@ -89,20 +96,39 @@ color:#777;
 
 }
 
-.social{
+.btn{
 
-margin-top:30px;
+margin-top:35px;
 
 }
 
-.social a{
+.btn a{
 
 text-decoration:none;
+background:#E1306C;
 color:white;
-background:#222;
-padding:10px 18px;
+
+padding:12px 25px;
+
 border-radius:25px;
+
 font-size:14px;
+
+transition:0.3s;
+
+}
+
+.btn a:hover{
+
+background:#c92c5f;
+
+}
+
+.footer{
+
+margin-top:30px;
+font-size:12px;
+color:#777;
 
 }
 
@@ -114,7 +140,9 @@ font-size:14px;
 
 <div class="container">
 
-<div class="logo">ShreeParv</div>
+<div class="logo">
+ShreeParv
+</div>
 
 <div class="tagline">
 Where every stitch celebrates tradition
@@ -124,11 +152,12 @@ Where every stitch celebrates tradition
 
 <p class="desc">
 
-Premium festive and bridal wear crafted with machine embroidery, handwork, and timeless Indian artistry.
+Premium festive and bridal wear crafted with machine embroidery, handwork, and a unique blend of both techniques.
 
-As manufacturers, we deliver premium quality fashion directly from our workshop to your doorstep.
+As manufacturers, we bring premium quality fashion directly from our workshop to your doorstep — offering the best value for money with beautiful craftsmanship.
 
 </p>
+
 
 <div class="countdown">
 
@@ -154,19 +183,28 @@ As manufacturers, we deliver premium quality fashion directly from our workshop 
 
 </div>
 
-<div class="social">
 
-<a href="https://instagram.com/shreeparv" target="_blank">
-Follow on Instagram
+<div class="btn">
+
+<a href="https://www.instagram.com/shreeparv" target="_blank">
+Follow us on Instagram
 </a>
 
 </div>
 
+
+<div class="footer">
+
+© 2026 ShreeParv. All Rights Reserved.
+
 </div>
+
+</div>
+
 
 <script>
 
-var launchDate = new Date("Jun 1, 2026 00:00:00").getTime();
+var launchDate = new Date("April 15, 2026 00:00:00").getTime();
 
 var x = setInterval(function() {
 
@@ -187,10 +225,9 @@ document.getElementById("hours").innerHTML = hours;
 document.getElementById("minutes").innerHTML = minutes;
 document.getElementById("seconds").innerHTML = seconds;
 
-}, 1000);
+},1000);
 
 </script>
 
 </body>
-
 </html>
