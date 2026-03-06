@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ShreeParv | Launching Soon</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Poppins', sans-serif;
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+background:linear-gradient(135deg,#d4af37,#f8f2dc);
+color:#222;
+}
+
+.container{
+
+background:white;
+padding:50px;
+border-radius:12px;
+width:420px;
+text-align:center;
+box-shadow:0 20px 40px rgba(0,0,0,0.15);
+
+}
+
+.logo{
+
+font-size:38px;
+font-weight:600;
+letter-spacing:2px;
+
+}
+
+.tagline{
+
+margin-top:5px;
+font-size:14px;
+color:#777;
+
+}
+
+h2{
+
+margin-top:30px;
+font-size:28px;
+
+}
+
+.desc{
+
+margin-top:10px;
+font-size:15px;
+line-height:1.6;
+color:#555;
+
+}
+
+.countdown{
+
+display:flex;
+justify-content:center;
+gap:20px;
+margin-top:25px;
+
+}
+
+.time{
+
+font-size:22px;
+font-weight:600;
+
+}
+
+.label{
+
+font-size:12px;
+color:#777;
+
+}
+
+.social{
+
+margin-top:30px;
+
+}
+
+.social a{
+
+text-decoration:none;
+color:white;
+background:#222;
+padding:10px 18px;
+border-radius:25px;
+font-size:14px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">ShreeParv</div>
+
+<div class="tagline">
+Where every stitch celebrates tradition
+</div>
+
+<h2>Launching Soon</h2>
+
+<p class="desc">
+
+Premium festive and bridal wear crafted with machine embroidery, handwork, and timeless Indian artistry.
+
+As manufacturers, we deliver premium quality fashion directly from our workshop to your doorstep.
+
+</p>
+
+<div class="countdown">
+
+<div>
+<div id="days" class="time">00</div>
+<div class="label">Days</div>
+</div>
+
+<div>
+<div id="hours" class="time">00</div>
+<div class="label">Hours</div>
+</div>
+
+<div>
+<div id="minutes" class="time">00</div>
+<div class="label">Minutes</div>
+</div>
+
+<div>
+<div id="seconds" class="time">00</div>
+<div class="label">Seconds</div>
+</div>
+
+</div>
+
+<div class="social">
+
+<a href="https://instagram.com/shreeparv" target="_blank">
+Follow on Instagram
+</a>
+
+</div>
+
+</div>
+
+<script>
+
+var launchDate = new Date("Jun 1, 2026 00:00:00").getTime();
+
+var x = setInterval(function() {
+
+var now = new Date().getTime();
+
+var distance = launchDate - now;
+
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+document.getElementById("days").innerHTML = days;
+document.getElementById("hours").innerHTML = hours;
+document.getElementById("minutes").innerHTML = minutes;
+document.getElementById("seconds").innerHTML = seconds;
+
+}, 1000);
+
+</script>
+
+</body>
+
+</html>
